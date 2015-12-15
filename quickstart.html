@@ -88,7 +88,7 @@
 									<kbd>$ wget https://github.com/SwiperProxy/swiperproxy/archive/v1.1.tar.gz \</kbd><br>
 									<kbd>-O /usr/local/src/swiperproxy-v1.1.tar.gz</kbd><br>
 									<kbd>$ tar -zxvf swiperproxy-v1.1.tar.gz</kbd><br>
-									<kbd>$ mv swiperproxy-v1.1 /opt/SwiperProxy/swiperproxy</kbd></p>
+									<kbd>$ mv swiperproxy-v1.1/ /opt/SwiperProxy/swiperproxy</kbd></p>
 									<p>Compile streamhtmlparser and the wrapper:<br>
 									<kbd>$ cd /opt/SwiperProxy/swiperproxy/include/streamhtmlparser</kbd><br>
 									<kbd>$ ./configure</kbd><br>
@@ -147,7 +147,7 @@
 				<hr>
 				<section>
 					<h2>Configuring</h2>
-					<p>All configuration is done in the <strong>proxy.conf</strong> configuration file. A default configuration file detailing each configuration option is supplied.</p>
+					<p>All configuration is done in the <strong>/opt/SwiperProxy/swiperproxy/proxy.conf</strong> configuration file. A default configuration file detailing each configuration option is supplied.</p>
 					<p>The most important settings are:</p>
 					<ul>
 						<li><var>http_listen_port</var>, <var>https_listen_port</var>: The <abbr title="Hypertext Transfer Protocol">HTTP</abbr> and <abbr title="HTTP Secure">HTTPS</abbr> ports the proxy will listen on. You can configure the listen ports to be 80 and 443 and let users access the proxy directly by using <a href="documentation/sys-libcap.html" hreflang="en" rel="help" title="libcap" type="text/html">libcap</a>. You can also place a <a href="documentation/sys-apachereverseproxy.html" hreflang="en" rel="help" title="Reverse proxy" type="text/html">reverse proxy</a> in-front of SwiperProxy. In that case, the listen ports should be different.</li>
